@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".dispatch.DispatchBarcodeMannualFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_3sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/linear_light_bg"
+            android:orientation="horizontal"
+            android:padding="@dimen/_2sdp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/numeric"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/linear_full_bg"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:text="Numeric"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="normal" />
+
+
+            <TextView
+                android:id="@+id/alpha_numeric"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/linear_light_bg"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:text="Alpha Numeric"
+                android:textColor="@color/app_common_color"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_3sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!--            <RelativeLayout-->
+            <!--                android:layout_width="@dimen/_50sdp"-->
+            <!--                android:layout_height="@dimen/_40sdp"-->
+            <!--                android:layout_gravity="center"-->
+            <!--                android:background="@drawable/spinner_backgound"-->
+            <!--                android:padding="@dimen/_3sdp">-->
+
+            <!--                &lt;!&ndash;                <com.jaredrummler.materialspinner.MaterialSpinner&ndash;&gt;-->
+            <!--                &lt;!&ndash;                    android:id="@+id/spinner_code"&ndash;&gt;-->
+            <!--                &lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+            <!--                &lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--                &lt;!&ndash;                    android:layout_centerVertical="true"&ndash;&gt;-->
+            <!--                &lt;!&ndash;                    android:layout_marginStart="@dimen/_4sdp"&ndash;&gt;-->
+            <!--                &lt;!&ndash;                    android:layout_marginTop="@dimen/_2sdp"&ndash;&gt;-->
+            <!--                &lt;!&ndash;                    android:layout_marginEnd="@dimen/_5sdp"&ndash;&gt;-->
+            <!--                &lt;!&ndash;                    android:clickable="false"&ndash;&gt;-->
+            <!--                &lt;!&ndash;                    android:hint="Select Input Type"&ndash;&gt;-->
+            <!--                &lt;!&ndash;                    android:textSize="@dimen/_9sdp"&ndash;&gt;-->
+            <!--                &lt;!&ndash;                    app:ms_hint_color="@color/black"&ndash;&gt;-->
+            <!--                &lt;!&ndash;                    app:ms_padding_left="@dimen/_4sdp"&ndash;&gt;-->
+            <!--                &lt;!&ndash;                    app:ms_text_color="@color/black" />&ndash;&gt;-->
+
+
+            <!--                <Spinner-->
+            <!--                    android:visibility="gone"-->
+            <!--                    android:id="@+id/spinner"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_centerInParent="true" />-->
+
+
+            <!--             -->
+
+
+            <!--            </RelativeLayout>-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_backgound"
+                android:orientation="horizontal"
+                android:padding="@dimen/_1sdp">
+
+                <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+                    android:id="@+id/spinner1"
+                    android:layout_width="@dimen/_46sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/_2sdp"
+                    app:smsp_enableFloatingLabel="false"
+                    app:smsp_hint="123"
+                    app:smsp_hintColor="@color/black"
+                    app:smsp_itemColor="@color/black"
+                    app:smsp_itemListColor="@color/black"
+                    app:smsp_itemListHintBackgroundColor="@color/white"
+                    app:smsp_itemListHintColor="#FFFFFF"
+                    app:smsp_multilineError="false"
+                    app:smsp_selectedItemListColor="#FF5252"
+                    app:smsp_underlineSize="0dp" />
+
+                <EditText
+                    android:id="@+id/bar_code_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:background="@null"
+                    android:hint="Enter Barcode "
+                    android:inputType="text"
+                    android:padding="@dimen/_6sdp"
+                    android:textSize="@dimen/_10sdp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/submit_btn"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_42sdp"
+                android:layout_marginHorizontal="@dimen/_5sdp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/baseline_check_box_done"
+                app:tint="@color/app_common_color" />
+
+
+        </LinearLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_7sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:elevation="@dimen/_4sdp"
+            android:visibility="gone"
+            app:cardBackgroundColor="@color/app_common_color"
+            app:cardCornerRadius="@dimen/_12sdp"
+            app:cardElevation="@dimen/_4sdp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|end"
+                android:gravity="center"
+                android:padding="@dimen/_14sdp"
+                android:text="Submit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

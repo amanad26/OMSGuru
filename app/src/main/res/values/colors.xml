@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="fab_color_1">#ff5252</color>
+    <color name="fab_color_1_muted">#ff8080</color>
+    <color name="selected_indicator_color">#FF1AA1E1</color>
+    <color name="tab_background_color">#FFFFFFFF</color>
+
+    <color name="red">#FF3939</color>
+
+    <color name="background_gray">#ffdbdbdb</color>
+    <color name="app_common_color">#ff1a75ba</color>
+    <!--    <color name="gray">#ffcccccc</color>-->
+    <color name="main_page_grid_background_color">#ededed</color>
+    <color name="gray">#F5F4F8</color>
+
+
+    <color name="button_font_color">#000000</color>
+    <color name="textview_font_color">#000000</color>
+    <color name="edittext_hint_font_color">#91919191</color>
+    <color name="edittext_font_color">#000000</color>
+    <color name="radiobutton_font_color">#000000</color>
+
+    <color name="form_odd_row_background_color">#fff2f2f2</color>
+
+    <color name="nav_parent_title">#310850</color>
+    <color name="view_divider">#E0DEDE</color>
+    <color name="gray_dark">#F5F5F5</color>
+    <color name="orange">#FF5722</color>
+    <color name="green_light">#B9CFFFA1</color>
+    <color name="green">#B9A7FF53</color>
+    <color name="border">#BCBCBC</color>
+    <color name="linear_bg">#ECECEC</color>
+
+
+</resources>

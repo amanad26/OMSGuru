@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:versionCode="1"
+    android:versionName="v1.0">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission
+        android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+    <application
+        android:allowBackup="false"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/logo_symbol"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_symbol"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.OMSGuru"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:appComponentFactory">
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".ships.DetailProductForAllActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ships.ShipedProductListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".getStartedActivities.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".return_processing.UploadFileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".return_processing.DynamicFragmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".return_processing.VideoRecordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".validate_pack_order.ValidateAndPackActivity"
+            android:exported="false" />
+        <activity
+            android:name=".getStartedActivities.ForgetPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".return_processing.ViewAllProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".return_processing.OfferListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".putways.PutWaysListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".return_processing.ReturnProductDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".getStartedActivities.SelectWherehouseTypeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".getStartedActivities.VerifyOtpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".getStartedActivities.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".getStartedActivities.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

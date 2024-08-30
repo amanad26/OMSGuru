@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "994349397866",
+    "project_id": "oms-wms-app",
+    "storage_bucket": "oms-wms-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:994349397866:android:1bb118042b4d88daa1d713",
+        "android_client_info": {
+          "package_name": "com.oms.omsguru"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzVH2NwUIf53F9LUA1cA4g5-KzYzBKIUU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
