@@ -22,6 +22,7 @@ public class DisptchProductListAdapter extends RecyclerView.Adapter<DisptchProdu
     ArrayList<ProductListModel> models;
 
 
+
     public DisptchProductListAdapter(Context context, ArrayList<ProductListModel> models) {
         this.context = context;
         this.models = models;
